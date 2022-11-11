@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
-@PropertySource("classpath:config/producer-${spring-profile-active}.properties")
+@PropertySource("classpath:config/application-${spring-profile-active}.properties")
 public class kafkaConsumerConfig {
 
     @Value("${spring.kafka.bootstrap.url}")
