@@ -1,7 +1,6 @@
 package com.springboot.kafka.producerconsumer.controllers;
 
-import com.springboot.kafka.producerconsumer.producer.Producer;
-import org.apache.kafka.clients.producer.KafkaProducer;
+import com.springboot.kafka.producerconsumer.producer.StringProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/produce")
 public class MessageController {
 
-    private Producer producer;
+    private StringProducer producer;
     private int key;
 
     @Autowired
-    public MessageController(Producer producer) {
+    public MessageController(StringProducer producer) {
         this.producer = producer;
         this.key = 1;
     }
