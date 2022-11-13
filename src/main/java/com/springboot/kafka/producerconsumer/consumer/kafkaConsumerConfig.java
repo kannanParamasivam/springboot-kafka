@@ -1,7 +1,5 @@
 package com.springboot.kafka.producerconsumer.consumer;
 
-import com.springboot.kafka.producerconsumer.producer.KafkaProducerConfig;
-import jdk.jshell.spi.ExecutionControl;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;

@@ -15,7 +15,7 @@ import java.util.Map;
 
 @Configuration
 @PropertySource("classpath:config/application-${spring-profile-active}.properties")
-public class KafkaProducerConfig {
+public class StringProducerConfig {
 
     @Value("${spring.kafka.bootstrap.url}")
     private String bootstrapServers;
