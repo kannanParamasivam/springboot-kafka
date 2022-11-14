@@ -1,5 +1,11 @@
 package com.springboot.kafka.producerconsumer.modals;
 
+
+import org.apache.kafka.common.header.Headers;
+import org.apache.kafka.common.serialization.Serializer;
+
+import java.io.Serializable;
+
 public class Product {
 
     public String getName() {
@@ -11,4 +17,9 @@ public class Product {
     }
 
     String name;
+
+    @Override
+    public String toString() {
+        return "Product [name=" + name + "]";
+    }
 }
